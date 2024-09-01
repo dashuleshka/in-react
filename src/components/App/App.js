@@ -37,7 +37,6 @@ export const App = () => {
     return hotelsVal.length ? 'hidden' : 'visible';
   };
 
-  const name = "Dasha";
   return (
     <div>
       <div className="main-block">
