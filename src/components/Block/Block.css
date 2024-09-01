@@ -1,0 +1,35 @@
+.hotels-block {
+  background-color: #eaf0f9;
+}
+
+:root {
+  --black-color: #383838;
+  --font-size-l: 40px;
+}
+
+.hotels-block__heading {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 105px;
+  color: var(--black-color);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}
+
+@media (max-width: 950px) {
+  :root {
+    --col-width: calc(100% / 6);
+  }
+
+  .hotels-block__heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 655px) {
+  .hotels-block__heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+}

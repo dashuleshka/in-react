@@ -1,0 +1,88 @@
+.main-block__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 200px;
+  align-items: center;
+}
+
+.header__logo {
+  width: 205px;
+  height: 40px;
+}
+
+.header__navigation-buttons {
+  display: flex;
+  gap: 48px;
+}
+
+.navigation-buttons__links-block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navigation-buttons__links-block--header-links {
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  position: relative;
+}
+
+.navigation-buttons__buttons-block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.navigation-buttons__buttons-block--menu-button {
+  display: none;
+}
+
+.main-block__main-heading {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 145px;
+  color: var(--white-color);
+}
+
+@media (max-width: 550px) {
+  .main-block__header {
+    padding-top: 30px;
+    margin-bottom: 38px;
+  }
+
+  .header__logo {
+    padding-top: 5px;
+  }
+
+  .header__logo img {
+    width: 122px;
+    height: 24px;
+  }
+
+  .navigation-buttons__links-block {
+    display: none;
+  }
+
+  .main-block__main-heading {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .navigation-buttons__buttons-block--menu-button {
+    display: unset;
+  }
+
+  .navigation-buttons__buttons-block--account-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 655px) {
+  .navigation-buttons__links-block,
+  .navigation-buttons__buttons-block,
+  .header__navigation-buttons {
+    gap: 15px;
+  }
+}

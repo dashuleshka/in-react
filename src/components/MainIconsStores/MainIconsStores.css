@@ -1,0 +1,7 @@
+.main-block__game-stores {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-bottom: 420px;
+}
+

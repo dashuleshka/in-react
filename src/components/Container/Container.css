@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 1264px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.hotels-block__guests-loves-padding {
+  padding: 120px 16px;
+  background-color: #eaf0f9;
+}
+
+@media (max-width: 950px) {
+  .hotels-block__guests-loves-padding {
+    padding: 40px 16px;
+  }
+}
