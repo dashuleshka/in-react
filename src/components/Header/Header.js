@@ -28,7 +28,6 @@ export const Header = () => (
           <img src={account} alt="account"/>
         </button>
         <button className="navigation-buttons__buttons-block--menu-button">
-          {/*<img src="../../assets/images/menu.svg" alt="menu" />*/}
           <img src={menu} alt="menu"/>
         </button>
       </div>

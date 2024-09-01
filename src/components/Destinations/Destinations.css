@@ -1,0 +1,106 @@
+.destinations-block__heading, .reviews-block__heading {
+  color: var(--black-color);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 104px;
+}
+
+.destinations-block__buttons {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 66px;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+}
+
+.destinations-block__buttons button {
+  border-radius: 8px;
+  background: #f3f3f4;
+  min-width: 192px;
+  height: 64px;
+  color: var(--black-color);
+  font-size: var(--font-size-m);
+  padding: 0 16px;
+}
+
+.destinations-block__buttons button:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  transition: background-color 0.3s;
+}
+
+.destination-img-wrapper {
+  position: relative;
+}
+
+.destination-img-wrapper:hover button {
+  opacity: 1;
+}
+
+.destinations-block__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 48px;
+}
+
+.destinations-block__buttons button:hover span {
+  color: var(--white-color);
+}
+
+.destinations-content__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.destination-img-wrapper {
+  position: relative;
+}
+
+.hotels-block__item--typography-subtitle, .destinations-item__typography-subtitle {
+  color: var(--blue-color);
+  font-size: var(--font-size-m);
+}
+
+.destination-item-button {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--blue-color);
+  background: var(--white-color);
+  color: var(--blue-color);
+  font-size: var(--font-size-s);
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+
+.destinations-block__arrow-img {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 550px) {
+  .destination-item-button {
+    width: 90px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 655px) {
+
+  .destination-item-button {
+    width: 128px;
+    height: 48px;
+  }
+
+}

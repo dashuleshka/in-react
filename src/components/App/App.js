@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./App.css";
 import { Block } from "../Block";
 import { OfferBlock } from "../OfferBlock";
@@ -10,6 +9,7 @@ import {Container} from "../Container";
 import {Header} from "../Header";
 import {MainIconsStores} from "../MainIconsStores";
 import {PostParams} from "../PostParams";
+import {Destinations} from "../Destinations";
 
 export const App = () => {
   const [searchVal, searchState] = useState("");
@@ -53,6 +53,7 @@ export const App = () => {
       <OfferBlock />
       <PostParams searchVal={searchVal} visible={visibleStatus()}/>
       <Block></Block>
+      <Destinations/>
       <Footer className="footer-block__padding" />
     </div>
   );

@@ -39,7 +39,7 @@ export class PostParams extends Component {
         <h2 className="hotels-block__heading">Hotels Available</h2>
         <div id="homes-block__content" className="hotels-block__content">
           {posts.map(({ id, name, city, country, imageUrl }) => (
-            <div key={`${name}${city}`} id={id} className="hotels-block__item">
+            <div key={`${name}${city}${id}`} id={id} className="hotels-block__item">
               <div>
                 <img src={imageUrl} alt="Hotel image" />
               </div>

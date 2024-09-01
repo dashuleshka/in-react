@@ -17,7 +17,7 @@ export class Post extends Component {
     const { posts } = this.state;
 
     return (
-      <>
+      <div id="hotels-block" className="hotels-block">
         <h2 className="hotels-block__heading">Homes guests loves</h2>
         <div id="homes-block__content" className="hotels-block__content">
           {posts.map(({ id, name, city, country, imageUrl }) => (
@@ -34,7 +34,7 @@ export class Post extends Component {
             </div>
           ))}
         </div>
-      </>
+      </div>
     );
   }
 }
