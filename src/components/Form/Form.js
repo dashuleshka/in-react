@@ -7,7 +7,7 @@ export const Form = ({handleInput, searchVal, handleSearch}) => {
     <form id="my-form" action="" className="main-block__top-section-form">
       <div className="top-section-form__destination">
         <span className="top-section-form__destination--loop-icon">
-          <img src="../../../../../in-react/src/assets/images/search.svg" alt="searcher" />
+          <img src="../../assets/images/search.svg" alt="searcher" />
         </span>
         <input
           className="form-input input-destination-desktop"
