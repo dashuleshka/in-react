@@ -1,13 +1,14 @@
 import React from "react";
 
 import "./Form.css";
+import searchImage from '../../assets/images/search.svg'
 
 export const Form = ({handleInput, searchVal, handleSearch}) => {
   return (
     <form id="my-form" action="" className="main-block__top-section-form">
       <div className="top-section-form__destination">
         <span className="top-section-form__destination--loop-icon">
-          <img src="../../assets/images/search.svg" alt="searcher" />
+          <img src={searchImage} alt="searcher" />
         </span>
         <input
           className="form-input input-destination-desktop"

@@ -68,6 +68,11 @@
     margin-bottom: 40px;
   }
 
+  .offer-block__item {
+    width: unset;
+    gap: 16px;
+  }
+
   .offer-block__item--text {
     font-size: 15px;
   }

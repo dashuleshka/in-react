@@ -32,7 +32,6 @@ export const App = () => {
     );
   };
 
-
   const visibleStatus = () => {
     return hotelsVal.length ? 'hidden' : 'visible';
   };
