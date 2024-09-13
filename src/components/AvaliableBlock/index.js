@@ -1,1 +1,1 @@
-// export * from './AvaliableBlock'
+export * from './AvaliableBlock'

@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./MainIconsStores.css";
-import GoogleStore from "../../assets/images/googlePlay.svg"
+import GoogleStore from "../../assets/images/googlePlay.svg";
 import AppStore from "../../assets/images/app.svg";
 
 export const MainIconsStores = () => (

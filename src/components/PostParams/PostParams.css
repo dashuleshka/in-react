@@ -4,7 +4,6 @@
 
 .hotels-block__heading {
   text-align: center;
-  /*margin-bottom: 105px;*/
   color: var(--black-color);
   font-size: var(--font-size-l);
   font-weight: 500;
@@ -33,7 +32,8 @@
   width: 296px;
 }
 
-.hotels-block__item--typography-subtitle, .destinations-item__typography-subtitle {
+.hotels-block__item--typography-subtitle,
+.destinations-item__typography-subtitle {
   color: var(--blue-color);
   font-size: var(--font-size-m);
 }

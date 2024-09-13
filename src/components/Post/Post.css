@@ -42,11 +42,9 @@
     gap: 4px;
   }
 
-
   /*.hotels-block__guests-loves-padding {*/
   /*    padding: 40px 16px;*/
   /*}*/
-
 }
 
 @media (max-width: 655px) {
@@ -86,6 +84,4 @@
   .hotels-block__item--typography-subtitle {
     font-size: 12px;
   }
-
 }
-

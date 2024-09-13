@@ -1,11 +1,26 @@
-import React from "react";
-
+import React, { useContext, useState } from "react";
 import "./Form.css";
-import searchImage from '../../assets/images/search.svg'
+import searchImage from '../../assets/images/search.svg';
+import { UseHotelsSearch } from "../../hooks";
+import { PostContext } from "../PostParams";
 
-export const Form = ({handleInput, searchVal, handleSearch}) => {
+export const Form = () => {
+  const { setHotels } = useContext(PostContext);
+  const { searchHotels } = UseHotelsSearch();
+  const [searchVal, setSearchVal] = useState('');
+
+  const handleInput = (e) => {
+    setSearchVal(e.target.value);
+  };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    const result = await searchHotels(searchVal);
+    setHotels(result);
+  };
+
   return (
-    <form id="my-form" action="" className="main-block__top-section-form">
+    <form onSubmit={handleSearch} id="my-form" action="" className="main-block__top-section-form">
       <div className="top-section-form__destination">
         <span className="top-section-form__destination--loop-icon">
           <img src={searchImage} alt="searcher" />
@@ -23,16 +38,8 @@ export const Form = ({handleInput, searchVal, handleSearch}) => {
         <label className="form-label" htmlFor="country-desktop">
           Your destination or hotel name
         </label>
-        <input
-          className="form-input input-destination-mobile"
-          id="country-mobile"
-          type="text"
-          name="destination"
-          autoComplete="off"
-          placeholder="Your destination or hotel name"
-        />
       </div>
-      <div className="top-section-form__date-desktop">
+    <div className="top-section-form__date-desktop">
         <input
           className="form-input"
           id="booking-date"

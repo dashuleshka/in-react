@@ -2,12 +2,12 @@ import React from "react";
 import classNames from "classnames";
 
 import "./Footer.css";
-// import {FooterLogo} from "../../icons";
+
 import FooterLogo from "../../assets/images/logoFooter.svg";
 
 export const Footer = ({ className }) => (
   <footer className="footer-block">
-    <div className={classNames("container", className)}>
+    <div className="footer-block__padding">
       <div>
         <img className="footer-block__logo" src={FooterLogo} alt="logo" />
       </div>

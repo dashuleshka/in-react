@@ -1,1 +1,2 @@
-export * from './PostParams'
+export * from './PostParams';
+export * from './Post.context'

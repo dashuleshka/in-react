@@ -23,7 +23,7 @@ export class Post extends Component {
           {posts.map(({ id, name, city, country, imageUrl }) => (
             <div key={`${name}${city}`} id={id} className="hotels-block__item">
               <div>
-                <img src={imageUrl} alt="Hotel image" />
+                <img src={imageUrl} alt="Hotel" />
               </div>
               <span className="hotels-block__item--typography-subtitle">
                 {name}
