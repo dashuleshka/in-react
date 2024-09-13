@@ -1,6 +1,5 @@
 import "./Content.css";
 import React, { useEffect, useState } from "react";
-import { data } from "../Container/config";
 import { getPosts } from "../../services/popular";
 import { popularPosts } from "../../services/constants";
 

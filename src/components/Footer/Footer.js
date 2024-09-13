@@ -1,11 +1,9 @@
 import React from "react";
-import classNames from "classnames";
 
 import "./Footer.css";
-
 import FooterLogo from "../../assets/images/logoFooter.svg";
 
-export const Footer = ({ className }) => (
+export const Footer = () => (
   <footer className="footer-block">
     <div className="footer-block__padding">
       <div>

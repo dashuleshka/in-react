@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 
 import "./Avaliable.css";
 import { PostContext } from "../PostParams";

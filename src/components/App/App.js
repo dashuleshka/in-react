@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import { OfferBlock } from "../OfferBlock";
 import { Footer } from "../Footer";
@@ -6,10 +6,10 @@ import { Form } from "../Form";
 import { Container } from "../Container";
 import { Header } from "../Header";
 import { MainIconsStores } from "../MainIconsStores";
-import { PostParams, PostProvider } from "../PostParams";
+import { PostProvider } from "../PostParams";
 import { Destinations } from "../Destinations";
 import { Content } from "../Content";
-import { AvaliableBlock } from "../AvaliableBlock/AvaliableBlock";
+import { AvaliableBlock } from "../AvaliableBlock";
 
 export const App = () => {
   return (
